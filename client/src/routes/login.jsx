@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { setItem } from 'localforage'
+import SidebarWithBurgerMenu from '../components/Sidebar'
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -34,6 +35,7 @@ function Login() {
   return (
     <>
     <Navbar/>
+    <SidebarWithBurgerMenu/>
 <section class="relative py-20 px-20 xl:py-10 overflow-hidden">
 <div class="container px-4 mx-auto">
 <div class="max-w-7xl mx-auto">
@@ -57,8 +59,8 @@ function Login() {
   </div>
   <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
     <div class="max-w-md mx-auto lg:mx-0">
-      <h3 class="font-heading text-4xl text-gray-500 font-semibold mb-4">Sign in to your account</h3>
-      <p class="text-lg text-gray-500 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
+      <h3 class="font-heading text-4xl text-gray-300 font-semibold mb-4">Sign in to your account</h3>
+      <p class="text-lg text-gray-300 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
       
       <form onSubmit={
               (e) => {
@@ -68,16 +70,16 @@ function Login() {
             }
        action="">
         <div class="mb-6">
-          <label class="block mb-1.5 text-sm text-gray-500 font-semibold" for="">Email</label>
-          <input class="w-full py-3 px-4 text-sm text-gray-500 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+          <label class="block mb-1.5 text-sm text-gray-300 font-semibold" for="">Email</label>
+          <input class="w-full py-3 px-4 text-sm text-gray-300 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
         </div>
         <div class="mb-7">
           <div class="flex mb-1.5 items-center justify-between">
-            <label class="block text-sm text-gray-500 font-semibold" for="">Password</label>
-            <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-500" href="#">Forget password?</a>
+            <label class="block text-sm text-gray-300 font-semibold" for="">Password</label>
+            <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-300" href="#">Forget password?</a>
           </div>
           <div class="relative">
-            <input class="w-full py-3 px-4 text-sm text-gray-500 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+            <input class="w-full py-3 px-4 text-sm text-gray-300 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
             <button class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block hover:scale-110 transition duration-100">
               <img src="./sign-up/icon-eye.svg" alt=""/>
             </button>
@@ -91,7 +93,7 @@ function Login() {
           <div class="absolute top-0 right-full w-full h-full bg-gray-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
           <span class="relative">Login</span>
         </button>
-        <span class="text-xs font-semibold text-gray-500">
+        <span class="text-xs font-semibold text-gray-300">
           <span>Don’t have an account?</span>
           <a class="inline-block ml-1 text-orange-900 hover:text-orange-700" href="/signin">Sign up</a>
         </span>

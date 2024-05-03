@@ -14,6 +14,7 @@ import Users from './routes/Users.jsx';
 import AddUID from './routes/AddUID.jsx';
 import Form from './components/doctor/Form.jsx';
 import MyRequest from './routes/MyRequest.jsx';
+import BPM from './routes/BPM.jsx'
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path : "my-requests",
     element: <MyRequest />,
+  },
+  {
+    path: "/bpm",
+    element: <BPM />,
   }
   
 ]);

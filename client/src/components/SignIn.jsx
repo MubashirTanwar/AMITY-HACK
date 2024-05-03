@@ -18,8 +18,8 @@ function SignIn() {
       <div class="flex flex-wrap -mx-4 items-center">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
           <div class="max-w-md mx-auto lg:mx-0">
-            <h3 class="font-heading text-4xl text-gray-900 font-semibold mb-4">Sign in to your account</h3>
-            <p class="text-lg text-gray-500 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
+            <h3 class="font-heading text-4xl text-gray-300 font-semibold mb-4">Sign in to your account</h3>
+            <p class="text-lg text-gray-300 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
             
             <form onSubmit={(e) => {
               e.preventDefault()
@@ -27,20 +27,20 @@ function SignIn() {
             
             }} action="">
               <div class="mb-6">
-                <label class="block mb-1.5 text-sm text-gray-900 font-semibold" for="">Name</label>
-                <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Your Name" value={name} onChange={(e) => e.target.value}/>
+                <label class="block mb-1.5 text-sm text-gray-300 font-semibold" for="">Name</label>
+                <input class="w-full py-3 px-4 text-sm text-gray-300 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Your Name" value={name} onChange={(e) => e.target.value}/>
               </div>
               <div class="mb-6">
-                <label class="block mb-1.5 text-sm text-gray-900 font-semibold" for="">Email</label>
-                <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev" value={email} onChange={(e) => e.target.value}/>
+                <label class="block mb-1.5 text-sm text-gray-300 font-semibold" for="">Email</label>
+                <input class="w-full py-3 px-4 text-sm text-gray-300 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev" value={email} onChange={(e) => e.target.value}/>
               </div>
               <div class="mb-7">
                 <div class="flex mb-1.5 items-center justify-between">
-                  <label class="block text-sm text-gray-900 font-semibold" for="">Password</label>
-                  <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-900" href="#">Forget password?</a>
+                  <label class="block text-sm text-gray-300 font-semibold" for="">Password</label>
+                  <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-300" href="#">Forget password?</a>
                 </div>
                 <div class="relative">
-                  <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password" value={password} onChange={(e) => e.target.value}/>
+                  <input class="w-full py-3 px-4 text-sm text-gray-300 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password" value={password} onChange={(e) => e.target.value}/>
                   <button class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block hover:scale-110 transition duration-100">
                     <img src="saturn-assets/images/sign-up/icon-eye.svg" alt=""/>
                   </button>
@@ -54,7 +54,7 @@ function SignIn() {
                 <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                 <span class="relative">Login</span>
               </button>
-              <span class="text-xs font-semibold text-gray-900">
+              <span class="text-xs font-semibold text-gray-300">
                 <span>Don’t have an account?</span>
                 <a class="inline-block ml-1 text-orange-900 hover:text-orange-700" href="#">Sign up</a>
               </span>

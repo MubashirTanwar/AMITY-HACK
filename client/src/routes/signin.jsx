@@ -40,8 +40,8 @@ const Signin = () => {
       <div class="flex flex-wrap -mx-4 items-center">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
           <div class="max-w-md mx-auto lg:mx-0">
-            <h3 class="font-heading text-4xl text-gray-900 font-semibold mb-4">Sign in to your account</h3>
-            <p class="text-lg text-gray-500 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
+            <h3 class="font-heading text-4xl text-gray-300 font-semibold mb-4">Sign in to your account</h3>
+            <p class="text-lg text-gray-300 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
             
             <form onSubmit={
               (e) => {
@@ -60,7 +60,7 @@ const Signin = () => {
               <div class="mb-7">
                 <div class="flex mb-1.5 items-center justify-between">
                   <label class="block text-sm text-gray-400 font-semibold" for="">Password</label>
-                  <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-900" href="#">Forget password?</a>
+                  <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-300" href="#">Forget password?</a>
                 </div>
                 <div class="relative">
                   <input class="w-full py-3 px-4 text-sm text-gray-400 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
@@ -77,7 +77,7 @@ const Signin = () => {
                 <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                 <span class="relative">Sign In</span>
               </button>
-              <span class="text-xs font-semibold text-gray-900">
+              <span class="text-xs font-semibold text-gray-300">
                 <span>Have an account?</span>
                 <a class="inline-block ml-1 text-orange-900 hover:text-orange-700" href="login">Login</a>
               </span>

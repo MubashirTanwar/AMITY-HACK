@@ -8,18 +8,18 @@ function Footer() {
           <div class="flex flex-wrap -mx-4 pb-28">
             <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
               <div class="max-w-md mx-auto lg:mx-0">
-                <h3 class="max-w-sm font-heading text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                <h3 class="max-w-sm font-heading text-5xl md:text-6xl font-bold text-gray-300 mb-6">
                   <span>Ready to get</span>
                   <span class="font-serif italic"> started</span>
                   <span>?</span>
                 </h3>
-                <p class="max-w-sm text-gray-500 mb-16">
+                <p class="max-w-sm text-gray-300 mb-16">
                   If there are questions you want to ask, we will answer all
                   your question
                 </p>
                 <div class="sm:flex mb-2 items-center">
                   <input
-                    class="w-full mb-3 sm:mb-0 sm:mr-4 pb-4 bg-transparent border-b border-gray-200 text-sm text-gray-900 placeholder-gray-400 outline-none"
+                    class="w-full mb-3 sm:mb-0 sm:mr-4 pb-4 bg-transparent border-b border-gray-200 text-sm text-gray-300 placeholder-gray-400 outline-none"
                     type="email"
                     placeholder="Enter your email"
                   />
@@ -35,12 +35,12 @@ function Footer() {
             </div>
             <div class="w-full lg:w-1/2 px-4">
               <div class="max-w-md mx-auto lg:mr-0">
-                <p class="text-2xl font-semibold text-gray-900 mb-16">
+                <p class="text-2xl font-semibold text-gray-300 mb-16">
                   Maybe your question is have been answered, check this out.
                 </p>
                 <div class="pb-5 mb-5 border-b border-gray-200">
                   <a class="group flex items-center justify-between" href="#">
-                    <span class="text-lg text-gray-500 group-hover:text-orange-900">
+                    <span class="text-lg text-gray-300 group-hover:text-orange-900">
                       What is Nutritionist AI
                     </span>
                     <span>
@@ -64,7 +64,7 @@ function Footer() {
                 </div>
                 <div class="pb-5 mb-5 border-b border-gray-200">
                   <a class="group flex items-center justify-between" href="#">
-                    <span class="text-lg text-gray-500 group-hover:text-orange-900">
+                    <span class="text-lg text-gray-300 group-hover:text-orange-900">
                       How can I get service from Nutritionist AI
                     </span>
                     <span>
@@ -88,7 +88,7 @@ function Footer() {
                 </div>
                 <div>
                   <a class="group flex items-center justify-between" href="#">
-                    <span class="text-lg text-gray-500 group-hover:text-orange-900">
+                    <span class="text-lg text-gray-300 group-hover:text-orange-900">
                       What kind of service will I get
                     </span>
                     <span>
@@ -143,25 +143,25 @@ function Footer() {
               </div>
               <div class="flex mb-6 lg:mb-0 items-center">
                 <a
-                  class="inline-block mr-4 sm:mr-10 text-sm font-semibold text-gray-500 hover:text-gray-600"
+                  class="inline-block mr-4 sm:mr-10 text-sm font-semibold text-gray-300 hover:text-gray-600"
                   href="#"
                 >
                   Privacy Policy
                 </a>
                 <a
-                  class="inline-block mr-4 sm:mr-10 text-sm font-semibold text-gray-500 hover:text-gray-600"
+                  class="inline-block mr-4 sm:mr-10 text-sm font-semibold text-gray-300 hover:text-gray-600"
                   href="#"
                 >
                   Terms & Conditions
                 </a>
                 <a
-                  class="inline-block text-sm font-semibold text-gray-500 hover:text-gray-600"
+                  class="inline-block text-sm font-semibold text-gray-300 hover:text-gray-600"
                   href="#"
                 >
                   Support
                 </a>
               </div>
-              <span class="inline-block ml-auto text-sm text-gray-500">
+              <span class="inline-block ml-auto text-sm text-gray-300">
                 © All Rights Reserved
               </span>
             </div>
