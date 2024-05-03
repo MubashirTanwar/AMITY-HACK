@@ -43,7 +43,7 @@ function Login() {
       <img class="block h-full w-full" src="./sign-up/image-funny.png" alt=""/>
       <div class="absolute bottom-0 w-full left-0 p-4 lg:px-12 xl:px-20 sm:pb-16">
         <div class="p-10 backdrop-blur-md backdrop-filter bg-black bg-opacity-30 rounded-5xl">
-          <p class="text-white font-medium mb-6">I’m impressed with the result I’ve seen since starting to use this product, I begin receiving client and project in the first week.</p>
+          <p class="text-white font-medium mb-6">I’m impressed with the result I’ve seen since starting to use this product, I begin notocing difference in the first week.</p>
           <div class="flex items-start">
             <img src="./sign-up/avatar-pink.png" alt=""/>
             <div class="ml-4">

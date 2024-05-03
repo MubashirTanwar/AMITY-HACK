@@ -8,9 +8,10 @@ function Chat() {
     const [image, setImage] = useState(null);
     const [show, setShow] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [prompt, setPrompt] = useState("");
+    var [prompt, setPrompt] = useState("");
     const [messages, setMessages] = useState([]);
     const [finished, setFinished] = useState(false);
+    const [uuhid, setUuhid] = useState(null);
 
     useEffect(() => {
         if (finished) {
@@ -29,8 +30,28 @@ function Chat() {
                 .then((data) => console.log(data))
                 .catch((error) => console.error("Error:", error));
         }
+
+        getUuhid();
     }
     , []);
+
+    const getUuhid = async () => {
+        const userid = "663444b53be9f652078ece80";
+        const response = await fetch(`http://localhost:8000/api/user/user/${userid}`, 
+        {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+
+        })
+        const data = await response.json();
+        setUuhid(data.data);
+        
+        console.log(response)
+    }
+
+
 
 
 
@@ -41,6 +62,7 @@ function Chat() {
         const updatedMessages = [...messages, prompt]; // Add the prompt as the last message
         setMessages(updatedMessages);
         const formData = new FormData();
+        prompt = prompt + " " + " following are the basic healtcare details about the person " +  uuhid;
         formData.append("image", image);
         formData.append("prompt", prompt);
         try {

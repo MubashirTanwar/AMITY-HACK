@@ -10,7 +10,7 @@ function Footer() {
               <div class="max-w-md mx-auto lg:mx-0">
                 <h3 class="max-w-sm font-heading text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                   <span>Ready to get</span>
-                  <span class="font-serif italic">started</span>
+                  <span class="font-serif italic"> started</span>
                   <span>?</span>
                 </h3>
                 <p class="max-w-sm text-gray-500 mb-16">
@@ -41,7 +41,7 @@ function Footer() {
                 <div class="pb-5 mb-5 border-b border-gray-200">
                   <a class="group flex items-center justify-between" href="#">
                     <span class="text-lg text-gray-500 group-hover:text-orange-900">
-                      What is Coca Soft
+                      What is Nutritionist AI
                     </span>
                     <span>
                       <svg
@@ -65,7 +65,7 @@ function Footer() {
                 <div class="pb-5 mb-5 border-b border-gray-200">
                   <a class="group flex items-center justify-between" href="#">
                     <span class="text-lg text-gray-500 group-hover:text-orange-900">
-                      How can I get service from Coca Soft
+                      How can I get service from Nutritionist AI
                     </span>
                     <span>
                       <svg

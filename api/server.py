@@ -19,6 +19,19 @@ def get_gemini_repsonse(input, image, prompt):
     response = model.generate_content([input, image[0], prompt])
     return response.text
 
+prompt1="""
+        You are an expert in nutritionist where you need to see the food items from the image
+                       and calculate the total calories, also provide the details of every food items with calories intake
+                       is below format
+                       
+                       1. Item 1 - no of calories 
+                       2. Item 2 - no of calories
+                       ----
+                       ----
+                    finally u can also mention that whether the food is healthy or not also mention the percentage split of the ratio of carbohydrates, fats, fibre, sugar and other important things required in our diet
+        
+        """
+
 
 def input_image_setup(uploaded_file):
     if uploaded_file is not None and uploaded_file.read():
@@ -51,6 +64,7 @@ def nutritionist_api():
         uploaded_file = request.files['image']
         
         input_prompt = request.form['prompt']
+        input_prompt += prompt1 + input_prompt
 
         try:
             image_data = input_image_setup(uploaded_file)
