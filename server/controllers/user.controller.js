@@ -32,7 +32,13 @@ const login = async (req, res) => {
         const refreshToken = await user.generateRefreshToken()
         user.refreshToken = refreshToken
         await user.save()
-        res.send({ user, token, refreshToken })
+
+        res
+        .status(200)
+        .cookie("accessToken", token, {
+            httpOnly: true,
+        })
+        .send({ user, token, refreshToken })
     }
     catch (error) {
         throw new ApiError(400, error.message)
@@ -45,16 +51,17 @@ const getAllUsers = asyncHandler(async (req, res) => {
 })
 
 const getUser = asyncHandler(async (req, res) => {
-    const user = await User.findById(req.params.id)
+    const user = await User.findById(req.params._id)
     if (!user) {
         throw new ApiError(404, "User not found")
     }
 
-    res.status(200).jsom(new ApiResponse(200, user))
+    res.status(200).json(new ApiResponse(200, user))
 })
 
 const updateUser = asyncHandler(async (req, res) => {
-    const user = await User.findByIdAndUpdate(req.params, req.body, { new: true })
+    console.log(req.params)
+    const user = await User.findByIdAndUpdate(req.params._id, req.body, { new: true })
     if (!user) {
         throw new ApiError(404, "User not found")
     }

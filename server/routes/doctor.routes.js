@@ -1,4 +1,4 @@
-import { addDoctor } from "../controllers/doctor";
+import { addDoctor } from "../controllers/doctor.js";
 import Router from "express";
 const doctorRouter = Router();
 

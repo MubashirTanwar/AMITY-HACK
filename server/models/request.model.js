@@ -6,12 +6,6 @@ const requestSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     },
-    requestType: {
-        type: String,
-    },
-    image : {
-        type: String,
-    },
     conversation: {
         type: Array,
     },

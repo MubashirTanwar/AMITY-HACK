@@ -19,3 +19,5 @@ const auth = async (req, res, next) => {
         throw new ApiError(500, "Internal Server Error");
     }
 }
+
+export { auth };
